@@ -3,9 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10-ling-colmar</title>
+    <title>Colmar Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>10-ling-colmar</h1>
+    <header class="w-full h-[64px] px-[24px] py-[16px]">
+        <nav class="flex justify-between">
+            <div class="flex h-[32px] items-center">
+                <img src="./images/ic-logo.svg" alt="logo" class="h-[32px]">
+                <a href="#" class="text-[22px] font-bold">COLMAR</a>
+                <a href="#" class="text-[22px] text-[#9B9B9B]">ACADEMY</a>
+            </div>
+            <ul class="flex gap-[16px] items-center">
+                <li>
+                    <a href="#" class="text-[19px] font-medium">On campus</a>
+                </li>
+                <li>
+                    <a href="#" class="text-[19px] font-medium">Online</a>
+                </li>
+                <li>
+                    <a href="#" class="text-[19px] font-medium">For companies</a>
+                </li>
+                <li>
+                    <a href="#" class="text-[19px] font-medium">Sign in</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!-- section hero -->
+        <section class="hero bg-[#D8D8D8] w-full flex gap-[24px] px-[24px] py-[32px]">
+            <figure class="w-[60%]">
+                <img src="./images/banner.jpg" alt="banner">
+            </figure>
+            <article class="w-[30%] flex flex-col justify-center">
+                <h1>Learn something new everyday</h1>
+                <h3 class="my-[55px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                <button type="button" class="py-[8px] bg-[#4A4A4A] hover:bg-[#3A3A3A] w-full text-[#F9F9F9] text-[2rem]">Start here</button>
+            </article>
+        </section>
+
+    <!-- section information -->
+        <section class="information flex w-[100%] pl-[24px] gap-[24px] pr-0">
+            <div class="w-[60%] flex flex-col gap-[32px] my-[32px]">
+                <figure>
+                    <img src="./images/information-main.jpg" alt="man-reading">
+                </figure>
+                <article>
+                    <h2>It doesn't hurt to keep practicing</h2>
+                    <p class="mt-[24px]">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quos iure. Alias, adipisci architecto praesentium minus, eveniet, illo ratione perferendis sequi sunt eos dicta accusamus tempora unde totam quia nulla earum esse."</p>
+                </article>
+                <aside>
+                    <p>Emanuel, Sr Strategist at Hiring.com</p>
+                </aside>
+            </div>
+
+            <div class="w-[40%] flex flex-col border-l-2 ">
+                <article class="flex flex-row gap-[1.5rem] p-[16px] items-center mt-[16px]">
+                    <figure class="w-[35%]">
+                        <img src="./images/information-orientation.jpg" alt="orientation">
+                    </figure>
+                    <div class="w-[65%] flex flex-col gap-[8px]">
+                        <h3>Orientation date</h3>
+                        <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                        <a href="#" class="text-[#4F93E2] font-semibold text-[1.2rem]">Read more</a>
+                    </div>
+                </article>
+                <article class="flex flex-row gap-[1.5rem] p-[16px] items-center">
+                    <figure class="w-[35%]">
+                        <img src="./images/information-campus.jpg" alt="orientation">
+                    </figure>
+                    <div class="w-[65%] flex flex-col gap-[8px]">
+                        <h3>Our campus</h3>
+                        <p>Find which campus is close by you</p>
+                        <a href="#" class="text-[#4F93E2] font-semibold text-[1.2rem]">Read more</a>
+                    </div>
+                </article>
+                <article class="flex flex-row gap-[1.5rem] p-[16px] items-center bg-[#D8D8D8]">
+                    <figure class="w-[35%]">
+                        <img src="./images/information-guest-lecture.jpg" alt="orientation">
+                    </figure>
+                    <div class="w-[65%] flex flex-col gap-[8px]">
+                        <h3>Our guest lecture</h3>
+                        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                        <a href="#" class="text-[#4F93E2] font-semibold text-[1.2rem]">Read more</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+<!-- section course -->
+        <section class="course px-[72px] py-[32px] bg-[#D8D8D8]">
+            <h2 class="pb-[32px] text-center">Start learning</h2>
+            <div class="grid grid-cols-3 grid-rows-2 gap-[32px]">
+                <article class="flex flex-col">
+                    <img src="./images/course-software.jpg" alt="course-software">
+                    <aside class="pl-[16px] h-[100%] pr-[60px]">
+                        <h3 class="my-[16px]">Software engineering</h3>
+                        <p class="my-[8px]">COURSES</p>
+                        <p class="my-[8px]">Web Development, Mobile Development, iOT, APIs</p>
+                    </aside>
+                </article>
+                <article class="flex flex-col">
+                    <img src="./images/course-computer-art.jpg" alt="course-computer-art">
+                    <aside class="pl-[16px] pb-[24px] h-[100%] pr-[60px]">
+                        <h3 class="my-[16px]">Computer art</h3>
+                        <p class="my-[8px]">COURSES</p>
+                        <p class="mt-[8px]">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                    </aside>
+                </article>
+                <article class="flex flex-col">
+                    <img src="./images/course-design.jpg" alt="course-design">
+                    <aside class="pl-[16px] h-[100%] pr-[60px]">
+                        <h3 class="my-[16px]">Design</h3>
+                        <p class="my-[8px]">COURSES</p>
+                        <p class="my-[8px]">User Experience Design, User Research, Visual Design</p>
+                    </aside>
+                </article>
+                <article class="flex flex-col">
+                    <img src="./images/course-data.jpg" alt="course-data">
+                    <aside class="pl-[16px] h-[100%] pr-[60px]">
+                        <h3 class="my-[16px]">Data</h3>
+                        <p class="my-[8px]">COURSES</p>
+                        <p class="my-[8px]">Data Science, Big Data, SQL, Data Visualization</p>
+                    </aside>
+                </article>
+                <article class="flex flex-col">
+                    <img src="./images/course-business.jpg" alt="course-business">
+                    <aside class="pl-[16px] h-[100%] pr-[60px]">
+                        <h3 class="my-[16px]">Business</h3>
+                        <p class="my-[8px]">COURSES</p>
+                        <p class="my-[8px]">Product Development, Business Development, Startup</p>
+                    </aside>
+                </article>
+                <article class="flex flex-col">
+                    <img src="./images/course-marketing.jpg" alt="course-marketing">
+                    <aside class="pl-[16px] h-[100%] pr-[60px]">
+                        <h3 class="my-[16px]">Marketing</h3>
+                        <p class="my-[8px]">COURSES</p>
+                        <p class="my-[8px]">Analytics, Content Marketing, Mobile Marketing</p>
+                    </aside>
+                </article>
+            </div>
+        </section>
+<!-- section thesis -->
+        <section class="thesis pl-[24px] py-[32px]">
+            <h2 class="text-center mb-[32px]">Thesis exhibit</h2>
+            <article class="flex gap-[24px]">
+                <div class="w-[60%]">
+                    <video controls src="./videos/thesis.mp4"></video>
+                    <h3 class="mt-[24px] mb-[8px]">Reimagine urban</h3>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatibus dolor tempore totam, corporis dolorem numquam provident cupiditate vero a recusandae nemo quae commodi eum beatae tempora! Maiores non blanditiis ut quae."</p>
+                </div>
+                <div class="w-[40%]">
+                    <article class="p-[16px] pr-0 flex gap-[16px] bg-[#D8D8D8]">
+                        <figure class="w-[35%]">
+                            <img src="./images/thesis-fisma.jpg" alt="thesis-fisma">
+                        </figure>
+                        <div class="w-[65%] flex flex-col justify-center gap-[16px] pr-[60px]">
+                            <h3>Fisma: Design and Prototype</h3>
+                            <p>Designer showcase of new prototype product</p>
+                        </div>
+                    </article>
+                    <article class="p-[16px] pr-0 flex gap-[16px]">
+                        <figure class="w-[35%]">
+                            <img src="./images/thesis-now-and-then.jpg" alt="thesis-now-and-then">
+                        </figure>
+                        <div class="w-[65%] flex flex-col justify-center gap-[16px] pr-[32px]">
+                            <h3>Now and then</h3>
+                            <p>Research study about New York</p>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+    </main>
+    <hr class="border-2">
+    <footer class="pl-[24px] pt-[16px] flex justify-between pb-[64px]">
+        <div>
+            <p>&#169; 2016 Colmar Academy. All rights reserved</p>
+        </div>
+        <div>
+            <a href="#" class="text-[#787878]">Terms</a>
+            <a href="#" class="text-[#787878]">Privacy</a>
+        </div>
+    </footer>
 </body>
 </html>
